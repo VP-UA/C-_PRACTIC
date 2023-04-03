@@ -1,0 +1,13 @@
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\bin\Debug\Project_Library_3.dll
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\bin\Debug\Project_Library_3.pdb
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\TestLibrary.csproj.AssemblyReference.cache
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\Project_Library_3_MarkupCompile.cache
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\Project_Library_3_MarkupCompile.lref
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\Themes\Generic.baml
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\Project_Library_3.g.resources
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\Project_Library_3.Properties.Resources.resources
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\TestLibrary.csproj.GenerateResource.cache
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\TestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\Project_Library_3.dll
+C:\Users\Vladislav\source\repos\Project_Lab3\Project_Library_3\obj\Debug\Project_Library_3.pdb
