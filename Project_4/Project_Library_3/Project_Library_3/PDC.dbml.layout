@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PDC">
+  <DataContextMoniker Name="/PODC" />
+  <nestedChildShapes>
+    <classShape Id="e6b57214-41b3-4b93-822e-0fdfa7482f95" absoluteBounds="2.25, 3.125, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/PODC/Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="56d5e939-1646-4503-b12e-58d0b8923b79" absoluteBounds="2.265, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d8fbc84-a380-4610-8760-edf8360c1fb4" absoluteBounds="5.125, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PODC/Position" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a8e8c5a-fa75-44a5-a227-5f990d6d4613" absoluteBounds="5.14, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68e67467-8f58-4c66-9276-b4c1a5319aa4" absoluteBounds="2.25, 1.25, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/PODC/CentrallOffice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe1865f1-b6e2-4d87-b786-d542b8bf70af" absoluteBounds="2.265, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.25 : 2.44399251302083); (3.25 : 3.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PODC/CentrallOffice/CentrallOffice_Group" />
+      <nodes>
+        <classShapeMoniker Id="68e67467-8f58-4c66-9276-b4c1a5319aa4" />
+        <classShapeMoniker Id="e6b57214-41b3-4b93-822e-0fdfa7482f95" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

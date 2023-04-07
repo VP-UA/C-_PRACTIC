@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Class="PODC" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="" Member="Group">
+    <Type Name="Group">
+      <Column Name="id" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" CanBeNull="false" />
+      <Column Name="id_centralloffice" Storage="_id_centraloffice" Type="System.Int32" CanBeNull="false" />
+      <Association Name="CentrallOffice_Group" Member="CentrallOffice" ThisKey="id_centralloffice" OtherKey="id" Type="CentrallOffice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="Position">
+    <Type Name="Position">
+      <Column Name="id" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" CanBeNull="false" />
+      <Column Member="name_surname" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="CentrallOffice">
+    <Type Name="CentrallOffice">
+      <Column Name="id" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" CanBeNull="false" />
+      <Association Name="CentrallOffice_Group" Member="Group" ThisKey="id" OtherKey="id_centralloffice" Type="Group" />
+    </Type>
+  </Table>
+</Database>

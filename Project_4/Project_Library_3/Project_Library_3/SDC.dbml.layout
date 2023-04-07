@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TDC">
+  <DataContextMoniker Name="/SPDC" />
+  <nestedChildShapes>
+    <classShape Id="0eb8c8da-5cad-43cb-bebf-7c56c6916611" absoluteBounds="2.375, 1.5, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/SPDC/CentralOffice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="314b0a07-12bc-48d0-87ec-7d6b8805d2d3" absoluteBounds="2.39, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e48d8daa-99b1-4be4-ae3c-bdc1ab5e6b34" absoluteBounds="4.875, 1.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SPDC/TourtistCountry" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48d1fa42-bcb3-4044-bd55-24857a80e8ce" absoluteBounds="4.8900000000000006, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cfc1cc0b-6aba-4f58-aa54-bc41efdb7213" absoluteBounds="7.25, 1.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SPDC/Group_s" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d34c19d-0997-4997-9604-8039585c4d14" absoluteBounds="7.265, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2e55fd7-4c98-4098-b887-b9a0ee23f7d9" absoluteBounds="3.5, 3.375, 2, 1.1939925130208326">
+      <DataClassMoniker Name="/SPDC/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aec34f36-6fc7-4610-abbe-1f5ba59a9163" absoluteBounds="3.515, 3.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 2.09699625651042); (4.875 : 2.09699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SPDC/CentralOffice/CentralOffice_TourtistCountry" />
+      <nodes>
+        <classShapeMoniker Id="0eb8c8da-5cad-43cb-bebf-7c56c6916611" />
+        <classShapeMoniker Id="e48d8daa-99b1-4be4-ae3c-bdc1ab5e6b34" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.875 : 1.78407348632813); (7.25 : 1.78407348632813)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SPDC/TourtistCountry/TourtistCountry_Group_s1" />
+      <nodes>
+        <classShapeMoniker Id="e48d8daa-99b1-4be4-ae3c-bdc1ab5e6b34" />
+        <classShapeMoniker Id="cfc1cc0b-6aba-4f58-aa54-bc41efdb7213" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

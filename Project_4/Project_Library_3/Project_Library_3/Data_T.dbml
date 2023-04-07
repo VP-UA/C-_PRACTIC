@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Class="Data_TDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="" Member="Group">
+    <Type Name="Group">
+      <Column Member="id" Type="System.String" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Member="name" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="" Member="Position">
+    <Type Name="Position">
+      <Column Member="id" Type="System.String" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Member="name" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

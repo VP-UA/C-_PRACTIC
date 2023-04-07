@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Class="SPDC" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="" Member="CentralOffice">
+    <Type Name="CentralOffice">
+      <Column Name="id" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name_c" Type="System.String" CanBeNull="false" />
+      <Association Name="CentralOffice_TourtistCountry" Member="TourtistCountry" ThisKey="id" OtherKey="id_centraloffice" Type="TourtistCountry" />
+    </Type>
+  </Table>
+  <Table Name="" Member="TourtistCountry">
+    <Type Name="TourtistCountry">
+      <Column Name="id" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name_c" Type="System.String" CanBeNull="false" />
+      <Column Name="id_centraloffice" Type="System.Int32" CanBeNull="false" />
+      <Association Name="TourtistCountry_Group_s1" Member="Group_s1" ThisKey="id" OtherKey="id_touristcountry" Type="Group_s" />
+      <Association Name="CentralOffice_TourtistCountry" Member="CentralOffice" ThisKey="id_centraloffice" OtherKey="id" Type="CentralOffice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="Group_s">
+    <Type Name="Group_s">
+      <Column Name="id" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name_c" Type="System.String" CanBeNull="false" />
+      <Column Name="id_touristcountry" Type="System.Int32" CanBeNull="false" />
+      <Association Name="TourtistCountry_Group_s1" Member="TourtistCountry1" ThisKey="id_touristcountry" OtherKey="id" Type="TourtistCountry" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="" Member="Country">
+    <Type Name="Country">
+      <Column Name="id" Type="System.Int32" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name_c" Storage="_name_country" Type="System.String" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
