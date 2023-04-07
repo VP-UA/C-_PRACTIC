@@ -1,0 +1,49 @@
+﻿<Window x:Class="TestClient.Dovidnik_Spivrobitnyky"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestClient"
+        mc:Ignorable="d"
+        Title="Dovidnik_Spivrobitnyky" Height="450" Width="800" Loaded="Window_Loaded"
+        Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.ColumnSpan="2">
+
+            <MenuItem  SubmenuOpened="button_get_changes" Background="Green" Foreground="White" >
+                <MenuItem.Icon>
+                    <Image Source="C:\Users\Vladislav\Desktop\vladislav\project\data.png"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Database" Margin="0,2,0,0"/>
+                </MenuItem.Header>
+                <MenuItem Header="Change DataBase" Name="s_ch" Background="Green" Foreground="White"/>
+                <MenuItem Header="Add data for verification" Click="s_add_verf_data_click" Background="Green" Foreground="White"/>
+                <MenuItem Header="Delete DataBase and close window" Click="s_delete_verf_data_click" Background="Green" Foreground="White"/>
+            </MenuItem>
+            <MenuItem  Click="s_submit_changes_click" Background="Orange" Foreground="White">
+                <MenuItem.Icon>
+                    <Image Source="C:\Users\Vladislav\Desktop\vladislav\project\save.png"/>
+                </MenuItem.Icon>
+                <MenuItem.Header>
+                    <TextBlock Text="Save change to DataBase" Margin="0,2,0,0"/>
+                </MenuItem.Header>
+            </MenuItem>
+            
+        </Menu>
+        <DataGrid Margin="5" Name="dg_countr" AutoGenerateColumns="False" Grid.Row="1" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name Turist Country" Binding="{Binding name_c}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

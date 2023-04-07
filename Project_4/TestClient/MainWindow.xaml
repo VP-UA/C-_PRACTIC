@@ -1,0 +1,60 @@
+﻿<Window x:Class="TestClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Global Travel" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Image Source="C:\Users\Vladislav\Desktop\vladislav\back.jpg" Margin="-65,-123,-84,-2" Grid.RowSpan="3"/>
+
+
+
+        <Menu>
+            <MenuItem Header="Умовно-постiйна iнформацiя" IsSubmenuOpen="True" Background="LightSeaGreen" Foreground="White">
+                <MenuItem Header="Довiдник 'Туристи'" Click="MenuItem_Click" Tag="Dovidnik_Turisti" Foreground="Black"/>
+                <MenuItem Header="Довiдник 'Спiвробiтники'" Click="MenuItem_Click" Tag="Dovidnik_Spivrobitnyky" Foreground="Black" />
+                <MenuItem Header="Довiдник 'Посади'" Click="MenuItem_Click" Tag="Dovidnik_Posadi" Foreground="Black"/>
+            </MenuItem>
+            <MenuItem Header="Вхiдна iнформацiя" IsSubmenuOpen="True" Background="LightSeaGreen" Foreground="White">
+                <MenuItem Header="Путiвковий контракт" Foreground="Black"/>
+                <MenuItem Header="Трудовий контракт" Foreground="Black"/>
+                <MenuItem Header="Завершення контракту" Foreground="Black"/>
+            </MenuItem>
+            <MenuItem Header="Вихiдна iнформацiя" IsSubmenuOpen="True" Background="LightSeaGreen" Foreground="White">
+                <MenuItem Header="Кiлькiсть договорiв на путiвки"/>
+            </MenuItem>
+        </Menu>
+
+        <Calendar Grid.Row="1" HorizontalAlignment="Left" Margin="400,0,0,0"  VerticalAlignment="Bottom" Width="400" Height="176"/>
+        <GroupBox Header="Туристи" Grid.Row="1" Margin="10,10,416,217" Foreground="White" >
+            <TreeView ItemsSource="{Binding project_tyristi}"  HorizontalAlignment="Center" Width="343" Height="149" MouseLeftButtonUp="TreeView_MouseLeftButtonUp">
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding contr}">
+                        <TextBlock Text="{Binding n}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+        </GroupBox>
+        <GroupBox Header="Спiвробiтники" Grid.Row="1"  Margin="10,208,416,20" Foreground="White" >
+            <TreeView ItemsSource="{Binding project_spivrobitnyky}" Margin="3,0,3,0" Height="150" >
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding contr}">
+                        <TextBlock Text="{Binding n}" />
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+        </GroupBox>
+
+        <Image Source="C:\Users\Vladislav\Desktop\G.png" Margin="474,5,74,260" Grid.Row="1"/>
+
+    </Grid>
+</Window>

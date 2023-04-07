@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="dblocal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=D:\PDC.mdf</Value>
+    </Setting>
+    <Setting Name="dbspconect" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=D:\SDC.mdf</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
