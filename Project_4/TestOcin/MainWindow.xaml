@@ -1,0 +1,25 @@
+﻿<Window x:Class="TestOcin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Item" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+      
+        <ListBox Grid.Row="1"/>
+        <Image Source="C:\Users\Vladislav\Desktop\G.png" Margin="148,0,148,0" Height="371" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Button Grid.Row="2" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="C:\Users\Vladislav\Desktop\ref.png" Height="33" Width="37"/>
+                <TextBlock VerticalAlignment="Center" Height="20" Width="92"><Run Text="      Оновити"/><LineBreak/><Run/></TextBlock>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>
